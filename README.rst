@@ -43,6 +43,9 @@ I tried to install using Docker Windows version with several methods and the res
   .env variable CKAN_URL and asign http://127.0.0.1:5000 instead http://localhost:5000
   
 CKAN_MAX_UPLOAD_SIZE_MB=5000 variable added to contrib/docker/.env file
+
+I created two new branches tags/2.8.2.jcc and tags/2.8.3.jcc to include CKAN_MAX_UPLOAD_SIZE_MB
+variable in contrib/docker/.env.test versions 2.8.2 and 2.8.3  
     
 Conclusions:
 ------------
