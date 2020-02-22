@@ -35,32 +35,33 @@ Installation
 ------------
 
 See the `CKAN Documentation <http://docs.ckan.org>`_ for installation instructions.
-JCC my notes about installation:
+
+* JCC my notes about installation:
 * I tried to install using Docker Windows version with several methods and the result
   was always the same: Problem binding port for ckan and datapusher. I tried changing
   .env variable CKAN_URL and asign http://127.0.0.1:5000 instead http://localhost:5000
   
 * CKAN_MAX_UPLOAD_SIZE_MB=5000 variable added to contrib/docker/.env file
     
-  Conclusions:
-  * Use Docker Linux instead Docker Windows
-  * Some users said that using 2.8.3 and 2.8.2 instead latest version from https:/github.com/ckan
+* Conclusions:
+* Use Docker Linux instead Docker Windows
+* Some users said that using 2.8.3 and 2.8.2 instead latest version from https:/github.com/ckan
     works, but it doesn't work for me.
-  * In case of Docker Linux there are no problem with binding ports between host and client container.
+* In case of Docker Linux there are no problem with binding ports between host and client container.
   
-  Usefull links:
-  * https://docs.ckan.org/en/2.8/maintaining/installing/install-from-docker-compose.html
-  * https://github.com/ckan/ckan/issues/5212
+* Usefull links:
+* https://docs.ckan.org/en/2.8/maintaining/installing/install-from-docker-compose.html
+* https://github.com/ckan/ckan/issues/5212
     Doc about ImportError: No module named configparser.
     Solution: Use an stable version git checkout tags/2.8.3 
     It doesn't work for me!
 
-  * Basic install instructions:
+* Basic install instructions:
    
-  git clone git@github.com:ckan/ckan
-  cd ckan/contrib/docker
-  cp .env.template .env
-  docker-compose up
+git clone git@github.com:ckan/ckan
+cd ckan/contrib/docker
+cp .env.template .env
+docker-compose up
 
 Support
 -------
