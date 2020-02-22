@@ -53,6 +53,9 @@ Use Docker Linux instead Docker Windows
 Some users said that using 2.8.3 and 2.8.2 instead latest version from https:/github.com/ckan
     works, but it doesn't work for me.
 In case of Docker Linux there are no problem with binding ports between host and client container.
+
+In my opinion the problem will be some updated library or the installation process that doesn't
+include configparser module. I hope next ckan version will solve this problem!
   
 Usefull links:
 --------------
